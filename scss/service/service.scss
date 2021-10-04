@@ -1,0 +1,98 @@
+.service {
+    background: #282828;
+    .container {
+        padding: 6vh 0;
+        @media (max-width: 990px) {
+            padding: 30px 0;
+        }
+    }
+    .service_title {
+        text-align: center;
+        margin-bottom: 6vh;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        font: 3.6vh "700";
+        @media (max-width: 990px) {
+            margin-bottom: 30px;
+            font: 2.4rem "700";   
+        }
+    }
+    .service_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px 100px;
+        align-items: center;
+        max-width: 1500px;
+        margin: 0 auto;
+        @media (max-width: 1280px) {
+            grid-gap: 40px 80px;
+        }
+        @media (max-width: 990px) {
+            grid-gap: 30px;
+            grid-template-columns: 1fr;
+        }
+        .service_item {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            grid-gap: 40px;
+            align-items: center;
+            @media (max-width: 990px) {
+                grid-template-columns: 1fr;
+                grid-gap: 30px;
+                align-items: center;
+            }
+            p {
+                position: relative;
+                display: flex;
+                height: 50px;
+                width: 50px;
+                align-items: center;
+                justify-content: center;
+                @media (max-width: 990px) {
+                    
+                    margin: 0 auto;
+                }
+                span {
+                    font: 1.8rem "400";
+                    color: #fff;
+                    z-index: 2;
+                    position: absolute;
+                }
+                svg {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+            a {
+                background: linear-gradient(68.66deg, #282828 18.54%, #4D4D4D 50.83%, #282828 78.96%);
+                border: 1px solid #B0B0B0;
+                box-sizing: border-box;
+                border-radius: 15px;
+                padding: 50px;
+                text-align: center;
+                transition: .3s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                text-align: center;
+                font: 2.4vh "400";
+                line-height: 150%;
+                @media (max-width: 990px) {
+                    font: 2rem "400";
+                    padding: 40px 30px;
+                }
+                
+                &:hover {
+                    background: #fff;
+                    border-color: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
