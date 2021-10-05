@@ -253,6 +253,8 @@ header {
         margin-left: 20px; } }
 
 .services_main {
+  background: url(../img/main/main_2.png) no-repeat center center fixed;
+  background-size: cover;
   position: relative; }
   .services_main .ser_bg {
     position: absolute;
@@ -351,6 +353,8 @@ header {
           font: 1.6rem/150% "400"; } }
 
 .main_section {
+  background: url(../img/main/main_bg.png) no-repeat center center fixed;
+  background-size: cover;
   position: relative;
   overflow: hidden;
   height: 100vh; }
@@ -477,7 +481,9 @@ header {
             font: 1.6rem/150% "400"; } }
 
 .benifest {
-  position: relative; }
+  position: relative;
+  background: url(../img/benifest/bg.png) no-repeat center center fixed;
+  background-size: cover; }
   .benifest .benifest_title {
     text-align: center;
     margin-bottom: 6vh;
@@ -1041,8 +1047,8 @@ header {
       display: block; }
 
 .contact {
-  background: -o-linear-gradient(21.34deg, #282828 18.54%, #4D4D4D 50.83%, #282828 78.96%);
-  background: linear-gradient(68.66deg, #282828 18.54%, #4D4D4D 50.83%, #282828 78.96%);
+  background: url(../img/partner/partner_bg.png) no-repeat center center fixed;
+  background-size: cover;
   position: relative; }
   .contact .partner_bg {
     position: absolute;
@@ -1154,6 +1160,7 @@ header {
             font: 2rem "500";
             margin-bottom: 10px; } }
       .form_feedback .form_send .form_box input {
+        max-width: 400px;
         width: 100%;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
@@ -1208,6 +1215,10 @@ header {
     @media (max-width: 990px) {
       .form_feedback_2 .form_feedback_wrap .form_send button {
         max-width: 100%; } }
+
+.form_wrap_custon {
+  margin: 0 auto;
+  max-width: 1200px; }
 
 footer {
   background: #282828; }
@@ -1297,10 +1308,10 @@ footer {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   @media (max-width: 990px) {
     .footer_info {
       display: grid;

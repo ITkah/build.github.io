@@ -69,6 +69,7 @@
                 }
             }
             input {
+                max-width: 400px;
                 width: 100%;
                 box-sizing: border-box;
                 border: none;
@@ -126,4 +127,9 @@
             }
         }
     }
+}
+
+.form_wrap_custon {
+    margin: 0 auto;
+    max-width: 1200px;
 }
