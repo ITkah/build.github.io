@@ -379,11 +379,7 @@ header {
             font: 1.6rem/150% "400"; } }
 
 .object {
-  height: 920px;
   position: relative; }
-  @media (max-width: 990px) {
-    .object {
-      height: auto; } }
   .object .container {
     padding: 60px 0;
     position: relative;

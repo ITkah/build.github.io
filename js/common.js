@@ -31,3 +31,10 @@ var swiper = new Swiper(".swiper", {
     prevEl: ".object .left",
   },
 });
+
+$(function(){
+  $(".footer_scroll").bind('click', function(e){
+      e.preventDefault();
+      $('body,html').animate({scrollTop: 0}, 400);    
+  });
+});
