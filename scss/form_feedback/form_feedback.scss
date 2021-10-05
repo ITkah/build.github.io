@@ -77,11 +77,51 @@
                 user-select: none;
                 background: #FFFFFF;
                 border-radius: 15px;
-                padding: 10px;
+                padding: 10px 40px;
+                color: #000;
                 color: #000;
                 font: 1.6rem "500";
                 @media (max-width: 990px) {
                     padding: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+.form_feedback_2 {
+    .form_feedback_2_container {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 10vh;
+        @media (max-width: 1120px) {
+            grid-template-columns: 1fr;
+            grid-gap: 40px;
+        }
+        .form_feedback_2_img {
+            img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+    .form_feedback_wrap {
+        .form_send {
+            grid-template-columns: 1fr;
+            grid-gap: 50px;
+            @media (max-width: 990px) {
+                grid-gap: 25px;
+            }
+            button {
+                max-width: 250px;
+                margin: 0 auto;
+                @media (max-width: 990px) {
+                    max-width: 100%;
                 }
             }
         }
